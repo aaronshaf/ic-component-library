@@ -16,6 +16,7 @@
     "requirejs": "http://requirejs.org/docs/release/2.1.9/minified/require.js",
     "emberjs": "http://builds.emberjs.com/tags/v1.1.2/ember.js",
     "handlebars": "http://builds.emberjs.com/handlebars-1.0.0.js",
-    "jquery": "http://code.jquery.com/jquery-2.0.3.min.js"
+    "jquery": "http://code.jquery.com/jquery-2.0.3.min.js",
+    "google-code-prettify": "~1.0.0"
   }
 }

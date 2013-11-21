@@ -6,10 +6,11 @@ a {
   text-decoration: none;
 }
 
-pre {
+pre.prettyprint {
   padding: 12px;
   background-color: #eee;
   box-shadow: 1px 1px 2px #bbb;
+  border: 0 none;
 }
 
 template {
@@ -20,6 +21,40 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   padding: 0;
   margin: 0;
+}
+
+attributes {
+
+}
+
+attribute {
+  width: 300px;
+}
+
+attribute label {
+  background-color: #eee;
+  text-align: right;
+  border-left: 0 none;
+}
+
+attribute:first-of-type label {
+  border-bottom: 1px solid white;
+}
+
+attribute:last-of-type label {
+  border-top: 1px solid white;
+}
+
+attribute:only-of-type label {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+attribute > * {
+  font-size: 1em;
+  padding: 8px 10px;
+  margin: 0;
+  border: 1px solid #eee;
 }
 
 logo {
@@ -66,6 +101,7 @@ nav {
 }
 
 component {
+  font-size: 0.9em;
   display: block;
   padding: 16px;
   transition: background-color 0.15s;
@@ -103,6 +139,16 @@ component.active {
 .flex-column {
   -webkit-flex-direction: column;
   flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+  -webkit-flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+  -webkit-flex: 2;
 }
 
 front-menu {
