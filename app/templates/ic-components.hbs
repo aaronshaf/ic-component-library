@@ -1,0 +1,15 @@
+<section class="fixed-vertical flex flex-column" style="width: 240px;">
+  <logo style="width: 100%;">
+    {{ic-logo}}
+  </logo>
+  <nav class="component-menu" style="overflow-y: scroll;">
+    <components style="display: block;">
+      {{#each}}
+        <component>{{this.name}}</component>
+      {{/each}}
+    </components>           
+  </nav>
+</section>
+<article class="fixed-vertical" style="right: 0; left: 240px; padding: 24px;">
+  {{outlet}}
+</article>

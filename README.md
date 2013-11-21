@@ -1,2 +1,2 @@
-ic-component-library
-====================
+ic-styleguide
+=============
