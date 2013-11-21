@@ -1,11 +1,15 @@
 <section class="fixed-vertical flex flex-column" style="width: 240px;">
   <logo style="width: 100%;">
-    {{ic-logo}}
+    {{#link-to 'index'}}
+      {{ic-logo}}
+    {{/link-to}}
   </logo>
   <nav class="component-menu" style="overflow-y: scroll;">
     <components style="display: block;">
       {{#each}}
-        <component>{{this.name}}</component>
+        {{#link-to 'ic-components.component' this.slug tagName='component'}}
+          &#123;&#123;{{name}}&#125;&#125;
+        {{/link-to}}
       {{/each}}
     </components>           
   </nav>

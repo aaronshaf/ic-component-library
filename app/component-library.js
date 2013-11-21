@@ -7,25 +7,28 @@ var App = Ember.Application.create({
 
 window.components = [
   {
-    name: "Icons"
+    name: 'icon'
   },
   {
-    name: "Lazily Paginated Records"
+    name: "lazily-paginated-records"
   },
   {
-    name: "Logo"
+    name: "logo"
   },
   {
-    name: "Modal"
+    name: "modal"
   },
   {
-    name: "Menu"
+    name: "menu"
+  },
+  {
+    name: "trigger"
   }
 ];
 
 components = components.map(function(component) {
   component.slug = Ember.String.dasherize(component.name);
-  return component;
+  return Ember.Object.create(component);
 })
 
 App.ApplicationController = Ember.Controller.extend({
@@ -36,7 +39,7 @@ App.ApplicationController = Ember.Controller.extend({
 
 App.Router.map(function() {
   this.resource('ic-components', {path: 'ic/'},  function() {
-    this.route('component', { path: ':slug' });
+    this.route('component', { path: ':component_slug' });
   });
 });
 
@@ -48,7 +51,11 @@ App.IcComponentsRoute = Ember.Route.extend({
 
 App.IcComponentsComponentRoute = Ember.Route.extend({
   model: function(params) {
-    var component = components.findProperty('slug',params.slug);
+    var component = components.findProperty('slug',params.component_slug);
+    jQuery.ajax('pages/ic/' + params.component_slug + '.html?buster=' + Math.random()).then(function(page) {
+      this.set('page',page);
+    }.bind(component));
     return component;
   }
 });
+
