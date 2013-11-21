@@ -1,0 +1,15 @@
+{
+  "name": "requirejs",
+  "_cacheHeaders": {
+    "ETag": "\"8011f1c-3b02-4e8babe5a6980\"",
+    "Last-Modified": "Mon, 14 Oct 2013 22:11:02 GMT",
+    "Content-Length": "15106",
+    "Content-Type": "application/javascript"
+  },
+  "_release": "e-tag:8011f1c-3",
+  "main": "index.js",
+  "_source": "http://requirejs.org/docs/release/2.1.9/minified/require.js",
+  "_target": "*",
+  "_originalSource": "http://requirejs.org/docs/release/2.1.9/minified/require.js",
+  "_direct": true
+}

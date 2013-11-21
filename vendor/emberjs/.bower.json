@@ -1,0 +1,14 @@
+{
+  "name": "ember-debug",
+  "_cacheHeaders": {
+    "ETag": "\"361d9070cb86013a50a0f48f472f82ce\"",
+    "Last-Modified": "Fri, 25 Oct 2013 20:17:35 GMT",
+    "Content-Length": "1040400",
+    "Content-Type": "text/javascript"
+  },
+  "_release": "e-tag:361d9070c",
+  "main": "index.js",
+  "_source": "http://builds.emberjs.com/tags/v1.1.2/ember.js",
+  "_target": "*",
+  "_originalSource": "http://builds.emberjs.com/tags/v1.1.2/ember.js"
+}

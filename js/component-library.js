@@ -40,7 +40,7 @@ define("component-library",
 
     App.Router.map(function() {
       this.resource('ic-components', {path: 'ic/'},  function() {
-        this.route('component', { path: ':slug' });
+        this.route('component', { path: ':component_slug' });
       });
     });
 
@@ -52,7 +52,7 @@ define("component-library",
 
     App.IcComponentsComponentRoute = Ember.Route.extend({
       model: function(params) {
-        var component = components.findProperty('slug',params.slug);
+        var component = components.findProperty('slug',params.component_slug);
         return component;
       }
     });
