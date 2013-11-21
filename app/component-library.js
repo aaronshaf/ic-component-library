@@ -13,7 +13,7 @@ window.components = [
     name: "lazily-paginated-records"
   },
   {
-    name: "logo"
+    name: "canvas-logo"
   },
   {
     name: "modal"
