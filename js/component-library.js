@@ -56,7 +56,7 @@ define("component-library",
     App.IcComponentsComponentRoute = Ember.Route.extend({
       model: function(params) {
         var component = components.findProperty('slug',params.component_slug);
-        jQuery.ajax('pages/ic/' + params.component_slug + '.html?bust=' + Math.random()).then(function(page) {
+        jQuery.ajax('pages/ic/' + params.component_slug + '.html?buster=' + Math.random()).then(function(page) {
           this.set('page',page);
         }.bind(component));
         return component;
