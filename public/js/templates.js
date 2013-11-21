@@ -140,7 +140,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 
 
-  data.buffer.push("<style>\n* { box-sizing: border-box }\n\na {\n  color: black;\n  text-decoration: none;\n}\n\npre.prettyprint {\n  padding: 12px;\n  background-color: #eee;\n  box-shadow: 1px 1px 2px #bbb;\n  border: 0 none;\n}\n\ntemplate {\n  display: none;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  padding: 0;\n  margin: 0;\n}\n\nattributes {\n\n}\n\nattribute {\n  width: 300px;\n}\n\nattribute label {\n  background-color: #eee;\n  text-align: right;\n  border-left: 0 none;\n}\n\nattribute:first-of-type label {\n  border-bottom: 1px solid white;\n}\n\nattribute:last-of-type label {\n  border-top: 1px solid white;\n}\n\nattribute:only-of-type label {\n  border-top: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n\nattribute > * {\n  font-size: 1em;\n  padding: 8px 10px;\n  margin: 0;\n  border: 1px solid #eee;\n}\n\nlogo {\n  display: block;\n  background-color: #CA3F2F;\n  height: 160px;\n  padding: 32px;\n}\n\nlayout {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nh1 {\n  margin-top: 0;\n  font-size: 2em;\n}\n\nh2:first-of-type {\n  margin-top: 0;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-weight: normal;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #eee;\n  margin: 1em 0;\n  padding: 0;\n}\n\nnav {\n  background-color: #f1f1f1;\n  flex: 1;\n  -webkit-flex: 1;\n}\n\ncomponent {\n  font-size: 0.9em;\n  display: block;\n  padding: 16px;\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n}\n\ncomponent:hover,\ncomponent.active {\n  background-color: #e5e5e5;\n  cursor: pointer;\n}\n\n.fixed-vertical {\n  top: 0;\n  bottom: 0;\n  position: fixed;\n}\n\n.fixed-horizontal {\n  left: 0;\n  right: 0;\n  position: fixed;\n}\n\n.flex {\n  display: -webkit-flex;\n  display: flex;\n}\n\n.flex-row {\n  -webkit-flex-direction: row;\n  flex-direction: row;\n}\n\n.flex-column {\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\n.flex-1 {\n  flex: 1;\n  -webkit-flex: 1;\n}\n\n.flex-2 {\n  flex: 2;\n  -webkit-flex: 2;\n}\n\nfront-menu {\n  -webkit-justify-content: center;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-align-content: stretch;\n  align-content: stretch;\n  display: -webkit-flex;\n  display: flex;\n}\n\nfront-menu-item {\n  display: block;\n  flex: 1;\n  -webkit-flex: 1;\n  font-size: 2.5em;\n  color: #555;\n  text-shadow: 1px 1px 2px #ddd;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\nfront-menu-item:hover,\nfront-menu-item:active {\n  background-color: #f9f9f9;\n  color: black;\n  text-shadow: 1px 1px 2px #ccc;\n}\n</style>");
+  data.buffer.push("<style>\n* { box-sizing: border-box }\n\na {\n  color: black;\n  text-decoration: none;\n}\n\npre {\n  padding: 12px;\n  background-color: #eee;\n  box-shadow: 1px 1px 2px #bbb;\n  border: 0 none;\n  width: auto;\n  display: inline-block;\n  font-size: 1.15em;\n}\n\ntemplate {\n  display: none;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  padding: 0;\n  margin: 0;\n}\n\nattributes {\n\n}\n\nattribute {\n  width: 300px;\n}\n\nattribute label {\n  background-color: #eee;\n  text-align: right;\n  border-left: 0 none;\n}\n\nattribute:first-of-type label {\n  border-bottom: 1px solid white;\n}\n\nattribute:last-of-type label {\n  border-top: 1px solid white;\n}\n\nattribute:only-of-type label {\n  border-top: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n\nattribute > * {\n  font-size: 1em;\n  padding: 8px 10px;\n  margin: 0;\n  border: 1px solid #eee;\n}\n\nlogo {\n  display: block;\n  background-color: #CA3F2F;\n  height: 160px;\n  padding: 32px;\n}\n\nlayout {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nh1 {\n  margin-top: 0;\n  font-size: 2em;\n}\n\nh2:first-of-type {\n  margin-top: 0;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-weight: normal;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #eee;\n  margin: 1em 0;\n  padding: 0;\n}\n\nnav {\n  background-color: #f1f1f1;\n  flex: 1;\n  -webkit-flex: 1;\n}\n\ncomponent {\n  font-size: 0.9em;\n  display: block;\n  padding: 16px;\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n}\n\ncomponent:hover,\ncomponent.active {\n  background-color: #e5e5e5;\n  cursor: pointer;\n}\n\n.fixed-vertical {\n  top: 0;\n  bottom: 0;\n  position: fixed;\n}\n\n.fixed-horizontal {\n  left: 0;\n  right: 0;\n  position: fixed;\n}\n\n.flex {\n  display: -webkit-flex;\n  display: flex;\n}\n\n.flex-row {\n  -webkit-flex-direction: row;\n  flex-direction: row;\n}\n\n.flex-column {\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\n.flex-1 {\n  flex: 1;\n  -webkit-flex: 1;\n}\n\n.flex-2 {\n  flex: 2;\n  -webkit-flex: 2;\n}\n\nfront-menu {\n  -webkit-justify-content: center;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-align-content: stretch;\n  align-content: stretch;\n  display: -webkit-flex;\n  display: flex;\n}\n\nfront-menu-item {\n  display: block;\n  flex: 1;\n  -webkit-flex: 1;\n  font-size: 2.5em;\n  color: #555;\n  text-shadow: 1px 1px 2px #ddd;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\nfront-menu-item:hover,\nfront-menu-item:active {\n  background-color: #f9f9f9;\n  color: black;\n  text-shadow: 1px 1px 2px #ccc;\n}\n</style>");
   
 });
 
@@ -267,6 +267,42 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
+Ember.TEMPLATES["components/ic-icon-settings"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<!-- default fill: 010101 -->\n<svg version=\"1.1\" class=\"ic-icon-settings\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n   width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\n<style>\n.ic-icon-settings {\n  -moz-transform: rotate(0deg);\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  -moz-transition: transform 0.8s;\n  -ms-transition: transform 0.8s;\n}\n.ic-icon-settings:hover {\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  transition: transform 0.8s;\n  -webkit-transition: transform 0.8s;\n  -moz-transition: transform 0.8s;\n  -webkit-transform: rotate(15deg);\n  -moz-transform: rotate(15deg);\n  -ms-transform: rotate(15deg);\n  transform: rotate(15deg);\n}\n.ic-icon-settings:active {\n  -webkit-transform: rotate(25deg);\n  -moz-transform: rotate(25deg);\n  -ms-transform: rotate(25deg);\n  transform: rotate(25deg);\n  transition-duration: 0.1s;\n  -moz-transition: transform 0.1s;\n  -ms-transition: transform 0.1s;\n  transition: transform 0.1s;\n}\n</style>\n<path class=\"test123\" ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" d=\"M99.771,45.605c-0.184-1.863-1.592-3.377-3.44-3.688l-9.138-1.566c-0.905-3.493-2.28-6.791-4.068-9.825\n  l5.345-7.546c1.094-1.548,1.007-3.64-0.21-5.094c-1.867-2.216-3.933-4.281-6.145-6.145c-0.774-0.646-1.729-0.977-2.679-0.977\n  c-0.841,0-1.687,0.256-2.407,0.767l-7.55,5.345c-3.035-1.788-6.332-3.163-9.825-4.068L58.091,3.67\n  c-0.319-1.845-1.833-3.257-3.7-3.444C52.84,0.075,51.401,0,50,0s-2.84,0.075-4.391,0.226c-1.867,0.188-3.381,1.6-3.7,3.444\n  l-1.563,9.138c-3.493,0.905-6.79,2.28-9.825,4.068l-7.55-5.345c-0.721-0.511-1.566-0.767-2.407-0.767\n  c-0.95,0-1.904,0.331-2.679,0.977c-2.212,1.863-4.277,3.929-6.145,6.145c-1.217,1.454-1.304,3.546-0.21,5.094l5.345,7.546\n  c-1.792,3.034-3.167,6.332-4.068,9.825L3.67,41.917c-1.849,0.312-3.257,1.825-3.44,3.688C0.075,47.156,0,48.596,0,50\n  s0.075,2.847,0.229,4.395c0.184,1.863,1.592,3.377,3.44,3.688l9.138,1.566c0.901,3.493,2.276,6.791,4.068,9.825L11.53,77.02\n  c-1.094,1.548-1.007,3.64,0.21,5.094c1.867,2.216,3.933,4.281,6.145,6.145c0.774,0.646,1.729,0.977,2.679,0.977\n  c0.841,0,1.687-0.256,2.407-0.767l7.55-5.345c3.035,1.788,6.332,3.163,9.825,4.068l1.563,9.138c0.319,1.845,1.833,3.257,3.7,3.444\n  C47.16,99.925,48.599,100,50,100s2.84-0.075,4.391-0.226c1.867-0.188,3.381-1.6,3.7-3.444l1.563-9.138\n  c3.493-0.905,6.79-2.28,9.825-4.068l7.55,5.345c0.721,0.511,1.566,0.767,2.407,0.767c0.95,0,1.904-0.331,2.679-0.977\n  c2.212-1.863,4.277-3.929,6.145-6.145c1.217-1.454,1.304-3.546,0.21-5.094l-5.345-7.546c1.788-3.034,3.163-6.332,4.068-9.825\n  l9.138-1.566c1.849-0.312,3.257-1.825,3.44-3.688C99.925,52.847,100,51.404,100,50S99.925,47.156,99.771,45.605z M50,69.23\n  c-10.626,0-19.23-8.604-19.23-19.23S39.374,30.77,50,30.77S69.23,39.374,69.23,50S60.626,69.23,50,69.23z\"/>\n</svg>\n");
+  return buffer;
+  
+});
+
+Ember.TEMPLATES["components/ic-icon-x"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-x\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n     width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\" enable-background=\"new 0 0 16 16\" xml:space=\"preserve\">\n<style>\n.ic-icon-x {\n  -moz-transform: rotate(0deg);\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  -moz-transition: transform 0.8s;\n  -ms-transition: transform 0.8s;\n  transition: transform 0.8s;\n}\n.ic-icon-x:hover {\n  transition-property: scale;\n  transition-duration: 0.8s;\n  transition: transform 0.8s;\n  -webkit-transition: transform 0.8s;\n  -moz-transition: transform 0.8s;\n  -webkit-transform: scale(1.05);\n  -moz-transform: scale(1.05);\n  -ms-transform: scale(1.05);\n  transform: scale(1.05);\n}\n.ic-icon-x:active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  transition-duration: 0.1s;\n  -moz-transition: transform 0.1s;\n  -ms-transition: transform 0.1s;\n  transition: transform 0.1s;\n}\n</style>\n  <g>\n      <path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" d=\"M0.028,1.923l1.896-1.895L8,6.105L14.104,0L16,1.896L9.896,8l6.076,6.076l-1.896,1.895L8,9.895L1.896,16\n          L0,14.104L6.104,8L0.028,1.923z\"/>\n  </g>\n</svg>");
+  return buffer;
+  
+});
+
 Ember.TEMPLATES["ic-components/component"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
@@ -338,10 +374,19 @@ function program1(depth0,data) {
 Ember.TEMPLATES["ic-components/ic-icon"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
-  
+  var buffer = '', stack1, hashTypes, hashContexts, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  data.buffer.push("<h2>&#123;&#123;ic-icon-x color=\"blue\" height=\"30px\" width=\"30px\"&#125;&#125;</h2>\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n     width=\"16px\" height=\"16px\" viewBox=\"0 0 16 16\" enable-background=\"new 0 0 16 16\" xml:space=\"preserve\">\n  <g>\n      <path fill=\"#8C9398\" d=\"M0.028,1.923l1.896-1.895L8,6.105L14.104,0L16,1.896L9.896,8l6.076,6.076l-1.896,1.895L8,9.895L1.896,16\n          L0,14.104L6.104,8L0.028,1.923z\"/>\n  </g>\n</svg>\n\n<pre class=\"prettyprint\">\nfunction(test) {}\n\nvar foo = 'bar'\n</pre>");
+  hashTypes = {};
+  hashContexts = {};
+  options = {hash:{},contexts:[depth0],types:["STRING"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.render || depth0.render),stack1 ? stack1.call(depth0, "icons/x", options) : helperMissing.call(depth0, "render", "icons/x", options))));
+  data.buffer.push("\n\n<hr />\n\n");
+  hashTypes = {};
+  hashContexts = {};
+  options = {hash:{},contexts:[depth0],types:["STRING"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.render || depth0.render),stack1 ? stack1.call(depth0, "icons/settings", options) : helperMissing.call(depth0, "render", "icons/settings", options))));
+  return buffer;
   
 });
 
@@ -392,5 +437,89 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 
 
   data.buffer.push("<h1>&#123;&#123;ic-components&#125;&#125;</h1>\n");
+  
+});
+
+Ember.TEMPLATES["icons/settings"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashTypes, hashContexts, options, escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
+
+function program1(depth0,data) {
+  
+  var buffer = '', hashTypes, hashContexts;
+  data.buffer.push(" fill-color=\"");
+  hashTypes = {};
+  hashContexts = {};
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "settingsFillColor", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  data.buffer.push("\"");
+  return buffer;
+  }
+
+  data.buffer.push("<h1>&#123;&#123;ic-icon-settings");
+  hashTypes = {};
+  hashContexts = {};
+  stack1 = helpers['if'].call(depth0, "settingsFillColor", {hash:{},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("&#125;&#125;</h1>\n\n<attributes class=\"flex flex-column\">\n  <attribute class=\"flex flex-row\">\n    <label>fill-color:</label>\n    ");
+  hashContexts = {'value': depth0,'class': depth0,'autofocus': depth0};
+  hashTypes = {'value': "ID",'class': "STRING",'autofocus': "STRING"};
+  options = {hash:{
+    'value': ("settingsFillColor"),
+    'class': ("flex-1"),
+    'autofocus': ("autofocus")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n  </attribute>\n</attributes>\n\n");
+  hashContexts = {'fill-color': depth0,'style': depth0};
+  hashTypes = {'fill-color': "ID",'style': "STRING"};
+  options = {hash:{
+    'fill-color': ("settingsFillColor"),
+    'style': ("margin-top: 16px;margin-bottom: 16px;width: 20px;height: 20px;")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-settings'] || depth0['ic-icon-settings']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-settings", options))));
+  return buffer;
+  
+});
+
+Ember.TEMPLATES["icons/x"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashTypes, hashContexts, options, escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
+
+function program1(depth0,data) {
+  
+  var buffer = '', hashTypes, hashContexts;
+  data.buffer.push(" fill-color=\"");
+  hashTypes = {};
+  hashContexts = {};
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "xFillColor", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  data.buffer.push("\"");
+  return buffer;
+  }
+
+  data.buffer.push("<h1>&#123;&#123;ic-icon-x");
+  hashTypes = {};
+  hashContexts = {};
+  stack1 = helpers['if'].call(depth0, "xFillColor", {hash:{},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("&#125;&#125;</h1>\n\n<attributes class=\"flex flex-column\">\n  <attribute class=\"flex flex-row\">\n    <label>fill-color:</label>\n    ");
+  hashContexts = {'value': depth0,'class': depth0,'autofocus': depth0};
+  hashTypes = {'value': "ID",'class': "STRING",'autofocus': "STRING"};
+  options = {hash:{
+    'value': ("xFillColor"),
+    'class': ("flex-1"),
+    'autofocus': ("autofocus")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n  </attribute>\n</attributes>\n\n");
+  hashContexts = {'fill-color': depth0,'style': depth0};
+  hashTypes = {'fill-color': "ID",'style': "STRING"};
+  options = {hash:{
+    'fill-color': ("xFillColor"),
+    'style': ("margin-top: 16px;margin-bottom: 16px;width: 20px;height: 20px;")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-x'] || depth0['ic-icon-x']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-x", options))));
+  return buffer;
   
 });

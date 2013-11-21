@@ -50,6 +50,20 @@ App.IcCanvasLogoComponent = Ember.Component.extend({
   }.property('fill-color')
 });
 
+App.IcIconXComponent = Ember.Component.extend({
+  attributeBindings: 'style',
+  'fillColor': function() {
+    return this.get('fill-color') ? this.get('fill-color') : 'black';
+  }.property('fill-color')
+});
+
+App.IcIconSettingsComponent = Ember.Component.extend({
+  attributeBindings: 'style',
+  'fillColor': function() {
+    return this.get('fill-color') ? this.get('fill-color') : '#010101';
+  }.property('fill-color')
+});
+
 App.IcComponentsComponentRoute = Ember.Route.extend({
   model: function(params) {
     var component = components.findProperty('slug',params.component_slug);
@@ -63,11 +77,11 @@ App.IcComponentsComponentRoute = Ember.Route.extend({
   }
 });
 
-App.IcComponentsComponentView = Ember.View.extend({
-  didInsertElement: function() {
-    this.$('pre').each(function() {
-      var prettyCode = prettyPrintOne($(this).html());
-      $(this).html(prettyCode);
-    });
-  }
-});
+// App.IcComponentsComponentView = Ember.View.extend({
+//   didInsertElement: function() {
+//     this.$('pre').each(function() {
+//       var prettyCode = prettyPrintOne($(this).html());
+//       $(this).html(prettyCode);
+//     });
+//   }
+// });
