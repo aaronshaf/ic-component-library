@@ -122,6 +122,24 @@ App.IcIconUnpublishComponent = Ember.Component.extend({
   }.property('fill-color')
 });
 
+App.IcIconAddComponent = Ember.Component.extend({
+  tagName: 'ic-icon-add',
+  classNames: 'ic-icon',
+  attributeBindings: 'style',
+  'fillColor': function() {
+    return this.get('fill-color') ? this.get('fill-color') : '#010101';
+  }.property('fill-color')
+});
+
+App.IcIconDragHandleComponent = Ember.Component.extend({
+  tagName: 'ic-icon-drag-handle',
+  classNames: 'ic-icon',
+  attributeBindings: 'style',
+  'fillColor': function() {
+    return this.get('fill-color') ? this.get('fill-color') : '#010101';
+  }.property('fill-color')
+});
+
 App.IcComponentsComponentRoute = Ember.Route.extend({
   model: function(params) {
     var component = components.findProperty('slug',params.component_slug);
