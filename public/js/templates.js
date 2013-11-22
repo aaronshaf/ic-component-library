@@ -75,7 +75,8 @@ function program4(depth0,data) {
   data.buffer.push("\n    </components>           \n  </nav>\n</section>\n<article class=\"fixed-vertical\" style=\"right: 0; left: 220px; padding: 24px;\">\n  ");
   hashTypes = {};
   hashContexts = {};
-  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "outlet", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  options = {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.outlet || depth0.outlet),stack1 ? stack1.call(depth0, "component", options) : helperMissing.call(depth0, "outlet", "component", options))));
   data.buffer.push("\n</article>");
   return buffer;
   
@@ -140,7 +141,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 
 
-  data.buffer.push("<style>\n* { box-sizing: border-box }\n\na {\n  color: black;\n  text-decoration: none;\n}\n\npre {\n  padding: 12px;\n  background-color: #eee;\n  box-shadow: 1px 1px 2px #bbb;\n  border: 0 none;\n  width: auto;\n  display: inline-block;\n  font-size: 1.15em;\n}\n\ntemplate {\n  display: none;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  padding: 0;\n  margin: 0;\n}\n\nattributes {\n\n}\n\nattribute {\n  width: 300px;\n}\n\nattribute label {\n  background-color: #eee;\n  text-align: right;\n  border-left: 0 none;\n}\n\nattribute:first-of-type label {\n  border-bottom: 1px solid white;\n}\n\nattribute:last-of-type label {\n  border-top: 1px solid white;\n}\n\nattribute:only-of-type label {\n  border-top: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n\nattribute > * {\n  font-size: 1em;\n  padding: 8px 10px;\n  margin: 0;\n  border: 1px solid #eee;\n}\n\nlogo {\n  display: block;\n  background-color: #CA3F2F;\n  height: 160px;\n  padding: 32px;\n}\n\nlayout {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nh1 {\n  margin-top: 0;\n  font-size: 2em;\n}\n\nh2:first-of-type {\n  margin-top: 0;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-weight: normal;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #eee;\n  margin: 1em 0;\n  padding: 0;\n}\n\nnav {\n  background-color: #f1f1f1;\n  flex: 1;\n  -webkit-flex: 1;\n}\n\ncomponent {\n  font-size: 0.9em;\n  display: block;\n  padding: 16px;\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n}\n\ncomponent:hover,\ncomponent.active {\n  background-color: #e5e5e5;\n  cursor: pointer;\n}\n\n.fixed-vertical {\n  top: 0;\n  bottom: 0;\n  position: fixed;\n}\n\n.fixed-horizontal {\n  left: 0;\n  right: 0;\n  position: fixed;\n}\n\n.flex {\n  display: -webkit-flex;\n  display: flex;\n}\n\n.flex-row {\n  -webkit-flex-direction: row;\n  flex-direction: row;\n}\n\n.flex-column {\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\n.flex-1 {\n  flex: 1;\n  -webkit-flex: 1;\n}\n\n.flex-2 {\n  flex: 2;\n  -webkit-flex: 2;\n}\n\nfront-menu {\n  -webkit-justify-content: center;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-align-content: stretch;\n  align-content: stretch;\n  display: -webkit-flex;\n  display: flex;\n}\n\nfront-menu-item {\n  display: block;\n  flex: 1;\n  -webkit-flex: 1;\n  font-size: 2.5em;\n  color: #555;\n  text-shadow: 1px 1px 2px #ddd;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\nfront-menu-item:hover,\nfront-menu-item:active {\n  background-color: #f9f9f9;\n  color: black;\n  text-shadow: 1px 1px 2px #ccc;\n}\n</style>\n\n<style>\nic-screenreader-only {\n  display: none;\n}\n\nic-modal * { box-sizing: border-box }\n\nic-button {\n  background-color: #F2F2F2;\n  background-image: linear-gradient(to bottom, #FFFFFE 0%, #E7E7E7 100%);\n  border: 1px solid #B6B9BC;\n/*   box-shadow: 0 0 0 1px #B6B9BC; */\n  padding: 6px 12px;\n  line-height: 22px;\n  border-radius: 4px;\n  vertical-align: middle;\n  font-size: 0.80em;\n  letter-spacing: 0.0625em;\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  cursor: default;\n}\n\nic-button.primary {\n  border-color: #39A2DE;\n/*   box-shadow: 0 0 0 1px #39A2DE; */\n  background-color: #1AA5E8;\n  background-image: linear-gradient(to bottom, #20B7F8 0%, #1B98DC 100%);\n  color: white;\n}\n</style>");
+  data.buffer.push("<style>\n* { box-sizing: border-box }\n\na {\n  color: black;\n  text-decoration: none;\n}\n\npre {\n  padding: 12px;\n  background-color: #eee;\n  box-shadow: 1px 1px 2px #bbb;\n  border: 0 none;\n  width: auto;\n  display: inline-block;\n  font-size: 1.15em;\n}\n\ntemplate {\n  display: none;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  padding: 0;\n  margin: 0;\n}\n\nattributes {\n\n}\n\nattribute {\n  width: 300px;\n}\n\nattribute label {\n  background-color: #eee;\n  text-align: right;\n  border-left: 0 none;\n}\n\nattribute:first-of-type label {\n  border-bottom: 1px solid white;\n}\n\nattribute:last-of-type label {\n  border-top: 1px solid white;\n}\n\nattribute:only-of-type label {\n  border-top: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n\nattribute > * {\n  font-size: 1em;\n  padding: 8px 10px;\n  margin: 0;\n  border: 1px solid #eee;\n}\n\nlogo {\n  display: block;\n  background-color: #CA3F2F;\n  height: 160px;\n  padding: 32px;\n}\n\nlayout {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nh1 {\n  margin-top: 0;\n  font-size: 2em;\n}\n\nh2:first-of-type {\n  margin-top: 0;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-weight: normal;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #eee;\n  margin: 1em 0;\n  padding: 0;\n}\n\nnav {\n  background-color: #f1f1f1;\n  flex: 1;\n  -webkit-flex: 1;\n}\n\ncomponent {\n  font-size: 0.9em;\n  display: block;\n  padding: 16px;\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n}\n\ncomponent:hover,\ncomponent.active {\n  background-color: #e5e5e5;\n  cursor: pointer;\n}\n\n.fixed-vertical {\n  top: 0;\n  bottom: 0;\n  position: fixed;\n}\n\n.fixed-horizontal {\n  left: 0;\n  right: 0;\n  position: fixed;\n}\n\n.flex {\n  display: -webkit-flex;\n  display: flex;\n}\n\n.flex-row {\n  -webkit-flex-direction: row;\n  flex-direction: row;\n}\n\n.flex-column {\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\n.flex-wrap {\n  -webkit-flex-wrap: wrap;\n  flex-wrap: wrap;\n}\n\n.align-items-center {\n  -webkit-align-items: center;\n  align-items: center;\n}\n\n.justify-content-center {\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\n.flex-1 {\n  flex: 1;\n  -webkit-flex: 1;\n}\n\n.flex-2 {\n  flex: 2;\n  -webkit-flex: 2;\n}\n\nfront-menu {\n  -webkit-justify-content: center;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-align-content: stretch;\n  align-content: stretch;\n  display: -webkit-flex;\n  display: flex;\n}\n\nfront-menu-item {\n  display: block;\n  flex: 1;\n  -webkit-flex: 1;\n  font-size: 2.5em;\n  color: #555;\n  text-shadow: 1px 1px 2px #ddd;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\nfront-menu-item:hover,\nfront-menu-item:active {\n  background-color: #f9f9f9;\n  color: black;\n  text-shadow: 1px 1px 2px #ccc;\n}\n</style>\n\n<style>\nic-screenreader-only {\n  display: none;\n}\n\nic-modal * { box-sizing: border-box }\n\nic-button {\n  background-color: #F2F2F2;\n  background-image: linear-gradient(to bottom, #FFFFFE 0%, #E7E7E7 100%);\n  border: 1px solid #B6B9BC;\n/*   box-shadow: 0 0 0 1px #B6B9BC; */\n  padding: 6px 12px;\n  line-height: 22px;\n  border-radius: 4px;\n  vertical-align: middle;\n  font-size: 0.80em;\n  letter-spacing: 0.0625em;\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  cursor: default;\n}\n\nic-button.primary {\n  border-color: #39A2DE;\n/*   box-shadow: 0 0 0 1px #39A2DE; */\n  background-color: #1AA5E8;\n  background-image: linear-gradient(to bottom, #20B7F8 0%, #1B98DC 100%);\n  color: white;\n}\n</style>");
   
 });
 
@@ -267,6 +268,42 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
+Ember.TEMPLATES["components/ic-icon-assignment"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-assignment\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n	 width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\n<path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" d=\"M87.987,25L63.006,0.013L19.237,0c-3.455,0-6.25,2.832-6.25,6.25v86.633c0,3.418,2.795,7.117,6.25,7.117\n	h62.5c3.455,0,6.275-3.699,6.275-7.117L87.987,25z M50.152,89.801l-2.667-8.24H32.568l-2.747,8.24h-8.85L35.43,49.701H45\n	l14.331,40.101H50.152z M81.737,75h-6.25v6.25h-6.25V75h-6.25v-6.25h6.25V62.5h6.25v6.25h6.25V75z M79.772,32.941h-16.7\n	c0,0-8.343,0-8.343-8.27c0,0,0-12.565,0-16.534c0-3.386,4.169-4.132,4.169-4.132l25.049,24.805\n	C83.947,28.809,83.947,32.941,79.772,32.941z M34.869,74.646h10.376l-5.121-15.778L34.869,74.646z\"/>\n</svg>\n");
+  return buffer;
+  
+});
+
+Ember.TEMPLATES["components/ic-icon-quiz"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-quiz\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n	 width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\r\n<g id=\"quiz\">\r\n	<g>\r\n		<path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" d=\"M49.695,31.744c-4.328,0-7.779,1.496-10.355,4.492c-2.579,2.996-3.866,7.476-3.866,13.446\r\n			c0,6.982,1.846,11.981,5.536,15.003c2.387,1.959,5.249,2.936,8.582,2.936c1.254,0,2.459-0.152,3.619-0.451\r\n			c0.638-0.159,1.26-0.256,2.252-0.672l-6.464-6.854l6.589-5.908l6.29,6.829c0.827-1.66,0.818-3.112,1.151-4.352\r\n			c0.519-1.867,0.778-4.046,0.778-6.537c0-5.713-1.199-10.126-3.598-13.251C57.809,33.307,54.303,31.744,49.695,31.744z M50,0\r\n			C22.388,0,0,22.388,0,50s22.388,50,50,50s50-22.388,50-50S77.612,0,50,0z M68.683,79.492l-6.277-5.804\r\n			c-1.92,1.136-2.988,1.349-4.386,1.807c-2.341,0.763-5.145,1.148-8.411,1.148c-6.814,0-12.445-1.984-16.894-5.945\r\n			c-5.396-4.767-8.091-11.774-8.091-21.014c0-9.308,2.765-16.351,8.298-21.118c4.513-3.894,10.129-5.841,16.843-5.841\r\n			c6.759,0,12.433,2.063,17.019,6.183c5.295,4.773,7.944,11.444,7.944,20.013c0,4.541-0.567,8.344-1.702,11.408\r\n			c-0.919,2.924-1.883,4.956-3.674,6.891l6.003,5.505L68.683,79.492z\"/>\r\n	</g>\r\n</g>\r\n</svg>\r\n");
+  return buffer;
+  
+});
+
 Ember.TEMPLATES["components/ic-icon-settings"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
@@ -325,7 +362,7 @@ function program1(depth0,data) {
   hashContexts = {'style': depth0};
   hashTypes = {'style': "STRING"};
   options = {hash:{
-    'style': ("height: 20px;")
+    'style': ("height: 20px;display: block;")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-x'] || depth0['ic-icon-x']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-x", options))));
   data.buffer.push("\n          ");
@@ -397,29 +434,72 @@ function program1(depth0,data) {
   options = {hash:{
     'background-color': ("backgroundColor"),
     'fill-color': ("fillColor"),
-    'style': ("margin-top: 24px;width: 100px;height: 100px;")
+    'style': ("margin-top: 24px;width: 100px;height: 100px;display: block;")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-canvas-logo'] || depth0['ic-canvas-logo']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-canvas-logo", options))));
-  data.buffer.push("\n");
   return buffer;
   
 });
 
-Ember.TEMPLATES["ic-components/ic-icon"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+Ember.TEMPLATES["ic-components/ic-icons"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
-  var buffer = '', stack1, hashTypes, hashContexts, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  var buffer = '', stack1, hashTypes, hashContexts, options, escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
 
-
+function program1(depth0,data) {
+  
+  var buffer = '', hashTypes, hashContexts;
+  data.buffer.push(" fill-color=\"");
   hashTypes = {};
   hashContexts = {};
-  options = {hash:{},contexts:[depth0],types:["STRING"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  data.buffer.push(escapeExpression(((stack1 = helpers.render || depth0.render),stack1 ? stack1.call(depth0, "icons/x", options) : helperMissing.call(depth0, "render", "icons/x", options))));
-  data.buffer.push("\n\n<hr />\n\n");
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "fillColor", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  data.buffer.push("\"");
+  return buffer;
+  }
+
+  data.buffer.push("<h1>&#123;&#123;ic-icon-<span style=\"color: #ccc\">awesome</span>");
   hashTypes = {};
   hashContexts = {};
-  options = {hash:{},contexts:[depth0],types:["STRING"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  data.buffer.push(escapeExpression(((stack1 = helpers.render || depth0.render),stack1 ? stack1.call(depth0, "icons/settings", options) : helperMissing.call(depth0, "render", "icons/settings", options))));
+  stack1 = helpers['if'].call(depth0, "fillColor", {hash:{},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("&#125;&#125;</h1>\n\n<attributes class=\"flex flex-column\">\n  <attribute class=\"flex flex-row\">\n    <label>fill-color:</label>\n    ");
+  hashContexts = {'value': depth0,'class': depth0,'autofocus': depth0};
+  hashTypes = {'value': "ID",'class': "STRING",'autofocus': "STRING"};
+  options = {hash:{
+    'value': ("fillColor"),
+    'class': ("flex-1"),
+    'autofocus': ("autofocus")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n  </attribute>\n</attributes>\n\n<icon-examples class=\"flex flex-1 flex-row flex-wrap\">\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-x'] || depth0['ic-icon-x']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-x", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-x</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-settings'] || depth0['ic-icon-settings']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-settings", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-settings</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-assignment'] || depth0['ic-icon-assignment']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-assignment", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-assignment</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-quiz'] || depth0['ic-icon-quiz']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-quiz", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-quiz</icon-example-tag>\n  </icon-example>\n</icon-examples>\n\n<style>\nicon-example .ic-icon {\n  width: 20px;\n  height: 20px;\n}\n\nicon-examples {\n  margin-top: 12px;\n}\n\nicon-example {\n  margin: 0px 8px 4px 0;\n  min-width: 220px;\n  box-shadow: 1px 1px 3px #ddd;\n  padding: 6px;\n  transition: box-shadow 0.15s;\n  -webkit-transition: box-shadow 0.15s;\n}\n\nicon-example:hover {\nbox-shadow: 1px 1px 3px #bbb;\n}\n\nicon-example-tag {\n  white-space: nowrap;\n  font-size: 1.1em;\n  margin-left: 6px;\n}\n</style>");
   return buffer;
   
 });

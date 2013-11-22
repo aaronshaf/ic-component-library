@@ -10,7 +10,7 @@ define("component-library",
     });
 
     window.components = [
-      { name: 'ic-icon' },
+      { name: 'ic-icons' },
       { name: "ic-lazily-paginated-records" },
       { name: "ic-canvas-logo" },
       { name: "ic-modal" },
@@ -47,6 +47,7 @@ define("component-library",
     });
 
     App.IcCanvasLogoComponent = Ember.Component.extend({
+      tagName: 'ic-canvas-logo',
       attributeBindings: 'style',
       'fillColor': function() {
         return this.get('fill-color') ? this.get('fill-color') : '#D64027';
@@ -54,6 +55,26 @@ define("component-library",
     });
 
     App.IcIconXComponent = Ember.Component.extend({
+      tagName: 'ic-icon-x',
+      classNames: 'ic-icon',
+      attributeBindings: 'style',
+      'fillColor': function() {
+        return this.get('fill-color') ? this.get('fill-color') : 'black';
+      }.property('fill-color')
+    });
+
+    App.IcIconAssignmentComponent = Ember.Component.extend({
+      tagName: 'ic-icon-assignment',
+      classNames: 'ic-icon',
+      attributeBindings: 'style',
+      'fillColor': function() {
+        return this.get('fill-color') ? this.get('fill-color') : 'black';
+      }.property('fill-color')
+    });
+
+    App.IcIconQuizComponent = Ember.Component.extend({
+      tagName: 'ic-icon-quiz',
+      classNames: 'ic-icon',
       attributeBindings: 'style',
       'fillColor': function() {
         return this.get('fill-color') ? this.get('fill-color') : 'black';
@@ -61,6 +82,8 @@ define("component-library",
     });
 
     App.IcIconSettingsComponent = Ember.Component.extend({
+      tagName: 'ic-icon-settings',
+      classNames: 'ic-icon',
       attributeBindings: 'style',
       'fillColor': function() {
         return this.get('fill-color') ? this.get('fill-color') : '#010101';
@@ -75,17 +98,10 @@ define("component-library",
       },
       renderTemplate: function(controller,model) {
         this.render('ic-components/' + model.get('slug'), {
-          view: 'IcComponentsComponent'
+          view: 'IcComponentsComponent',
+          // into: 'ic-components',
+          outlet: 'component'
         });
       }
     });
-
-    // App.IcComponentsComponentView = Ember.View.extend({
-    //   didInsertElement: function() {
-    //     this.$('pre').each(function() {
-    //       var prettyCode = prettyPrintOne($(this).html());
-    //       $(this).html(prettyCode);
-    //     });
-    //   }
-    // });
   });
