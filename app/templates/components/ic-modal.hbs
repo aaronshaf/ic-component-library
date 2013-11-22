@@ -1,0 +1,41 @@
+{{ic-modal-css}}
+
+<ic-modal>
+  <div class="modal-container">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">
+          [Add Item to <strong>Week 1</strong>]
+        </div>
+        <div class="modal-header-close">
+          {{#ic-trigger action="close"}}
+            {{ic-icon-x style="height: 20px;"}}
+          {{/ic-trigger}}
+        </div>
+      </div>
+      <div class="modal-body columned">
+        <stacked-tabs>
+          <tab>Assignments</tab>
+          <tab class="active">Pages</tab>
+          <tab>Quizzes</tab>
+          <tab>File</tab>
+          <tab>Discussion</tab>
+          <tab>Text Header</tab>
+          <tab>External URL</tab>
+          <tab>External Tool</tab>
+        </stacked-tabs>
+        <div class="padded">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra risus massa, at interdum arcu rutrum in. Donec ac pellentesque sapien, vel tempor purus. Aliquam neque purus, molestie non lacinia vitae, ullamcorper id nunc. Maecenas dictum est et ipsum porttitor pellentesque. Sed ipsum arcu, bibendum eget placerat sit amet, dictum nec lorem. Proin turpis arcu, posuere id orci suscipit, blandit iaculis nisi. Quisque pretium porta sodales. Nullam luctus sed enim non dictum. Vivamus est ligula, mattis et commodo non, placerat id quam. Donec convallis, libero eu pellentesque consectetur, augue tortor vestibulum arcu, eu convallis massa lacus vel neque. In euismod turpis orci, nec sagittis neque sagittis eget.
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra risus massa, at interdum arcu rutrum in. Donec ac pellentesque sapien, vel tempor purus. Aliquam neque purus, molestie non lacinia vitae, ullamcorper id nunc. Maecenas dictum est et ipsum porttitor pellentesque. Sed ipsum arcu, bibendum eget placerat sit amet, dictum nec lorem. Proin turpis arcu, posuere id orci suscipit, blandit iaculis nisi. Quisque pretium porta sodales. Nullam luctus sed enim non dictum. Vivamus est ligula, mattis et commodo non, placerat id quam. Donec convallis, libero eu pellentesque consectetur, augue tortor vestibulum arcu, eu convallis massa lacus vel neque. In euismod turpis orci, nec sagittis neque sagittis eget.
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="modal-footer-right">
+          <ic-button>Cancel</ic-button>
+          <ic-button class="primary">Add Item</ic-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ic-modal>

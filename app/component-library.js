@@ -11,7 +11,6 @@ window.components = [
   { name: "ic-canvas-logo" },
   { name: "ic-modal" },
   { name: "ic-menu" },
-  { name: "ic-button" },
   { name: "ic-trigger" }
 ];
 

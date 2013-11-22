@@ -140,7 +140,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 
 
-  data.buffer.push("<style>\n* { box-sizing: border-box }\n\na {\n  color: black;\n  text-decoration: none;\n}\n\npre {\n  padding: 12px;\n  background-color: #eee;\n  box-shadow: 1px 1px 2px #bbb;\n  border: 0 none;\n  width: auto;\n  display: inline-block;\n  font-size: 1.15em;\n}\n\ntemplate {\n  display: none;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  padding: 0;\n  margin: 0;\n}\n\nattributes {\n\n}\n\nattribute {\n  width: 300px;\n}\n\nattribute label {\n  background-color: #eee;\n  text-align: right;\n  border-left: 0 none;\n}\n\nattribute:first-of-type label {\n  border-bottom: 1px solid white;\n}\n\nattribute:last-of-type label {\n  border-top: 1px solid white;\n}\n\nattribute:only-of-type label {\n  border-top: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n\nattribute > * {\n  font-size: 1em;\n  padding: 8px 10px;\n  margin: 0;\n  border: 1px solid #eee;\n}\n\nlogo {\n  display: block;\n  background-color: #CA3F2F;\n  height: 160px;\n  padding: 32px;\n}\n\nlayout {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nh1 {\n  margin-top: 0;\n  font-size: 2em;\n}\n\nh2:first-of-type {\n  margin-top: 0;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-weight: normal;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #eee;\n  margin: 1em 0;\n  padding: 0;\n}\n\nnav {\n  background-color: #f1f1f1;\n  flex: 1;\n  -webkit-flex: 1;\n}\n\ncomponent {\n  font-size: 0.9em;\n  display: block;\n  padding: 16px;\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n}\n\ncomponent:hover,\ncomponent.active {\n  background-color: #e5e5e5;\n  cursor: pointer;\n}\n\n.fixed-vertical {\n  top: 0;\n  bottom: 0;\n  position: fixed;\n}\n\n.fixed-horizontal {\n  left: 0;\n  right: 0;\n  position: fixed;\n}\n\n.flex {\n  display: -webkit-flex;\n  display: flex;\n}\n\n.flex-row {\n  -webkit-flex-direction: row;\n  flex-direction: row;\n}\n\n.flex-column {\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\n.flex-1 {\n  flex: 1;\n  -webkit-flex: 1;\n}\n\n.flex-2 {\n  flex: 2;\n  -webkit-flex: 2;\n}\n\nfront-menu {\n  -webkit-justify-content: center;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-align-content: stretch;\n  align-content: stretch;\n  display: -webkit-flex;\n  display: flex;\n}\n\nfront-menu-item {\n  display: block;\n  flex: 1;\n  -webkit-flex: 1;\n  font-size: 2.5em;\n  color: #555;\n  text-shadow: 1px 1px 2px #ddd;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\nfront-menu-item:hover,\nfront-menu-item:active {\n  background-color: #f9f9f9;\n  color: black;\n  text-shadow: 1px 1px 2px #ccc;\n}\n</style>");
+  data.buffer.push("<style>\n* { box-sizing: border-box }\n\na {\n  color: black;\n  text-decoration: none;\n}\n\npre {\n  padding: 12px;\n  background-color: #eee;\n  box-shadow: 1px 1px 2px #bbb;\n  border: 0 none;\n  width: auto;\n  display: inline-block;\n  font-size: 1.15em;\n}\n\ntemplate {\n  display: none;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  padding: 0;\n  margin: 0;\n}\n\nattributes {\n\n}\n\nattribute {\n  width: 300px;\n}\n\nattribute label {\n  background-color: #eee;\n  text-align: right;\n  border-left: 0 none;\n}\n\nattribute:first-of-type label {\n  border-bottom: 1px solid white;\n}\n\nattribute:last-of-type label {\n  border-top: 1px solid white;\n}\n\nattribute:only-of-type label {\n  border-top: 1px solid #eee;\n  border-bottom: 1px solid #eee;\n}\n\nattribute > * {\n  font-size: 1em;\n  padding: 8px 10px;\n  margin: 0;\n  border: 1px solid #eee;\n}\n\nlogo {\n  display: block;\n  background-color: #CA3F2F;\n  height: 160px;\n  padding: 32px;\n}\n\nlayout {\n  position: fixed;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\nh1 {\n  margin-top: 0;\n  font-size: 2em;\n}\n\nh2:first-of-type {\n  margin-top: 0;\n}\n\nh1,h2,h3,h4,h5,h6 {\n  font-weight: normal;\n}\n\nhr {\n  display: block;\n  height: 1px;\n  border: 0;\n  border-top: 1px solid #eee;\n  margin: 1em 0;\n  padding: 0;\n}\n\nnav {\n  background-color: #f1f1f1;\n  flex: 1;\n  -webkit-flex: 1;\n}\n\ncomponent {\n  font-size: 0.9em;\n  display: block;\n  padding: 16px;\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n}\n\ncomponent:hover,\ncomponent.active {\n  background-color: #e5e5e5;\n  cursor: pointer;\n}\n\n.fixed-vertical {\n  top: 0;\n  bottom: 0;\n  position: fixed;\n}\n\n.fixed-horizontal {\n  left: 0;\n  right: 0;\n  position: fixed;\n}\n\n.flex {\n  display: -webkit-flex;\n  display: flex;\n}\n\n.flex-row {\n  -webkit-flex-direction: row;\n  flex-direction: row;\n}\n\n.flex-column {\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\n.flex-1 {\n  flex: 1;\n  -webkit-flex: 1;\n}\n\n.flex-2 {\n  flex: 2;\n  -webkit-flex: 2;\n}\n\nfront-menu {\n  -webkit-justify-content: center;\n  justify-content: center;\n  cursor: pointer;\n  -webkit-align-content: stretch;\n  align-content: stretch;\n  display: -webkit-flex;\n  display: flex;\n}\n\nfront-menu-item {\n  display: block;\n  flex: 1;\n  -webkit-flex: 1;\n  font-size: 2.5em;\n  color: #555;\n  text-shadow: 1px 1px 2px #ddd;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-align-items: center;\n  align-items: center;\n  -webkit-justify-content: center;\n  justify-content: center;\n}\n\nfront-menu-item:hover,\nfront-menu-item:active {\n  background-color: #f9f9f9;\n  color: black;\n  text-shadow: 1px 1px 2px #ccc;\n}\n</style>\n\n<style>\nic-screenreader-only {\n  display: none;\n}\n\nic-modal * { box-sizing: border-box }\n\nic-button {\n  background-color: #F2F2F2;\n  background-image: linear-gradient(to bottom, #FFFFFE 0%, #E7E7E7 100%);\n  border: 1px solid #B6B9BC;\n/*   box-shadow: 0 0 0 1px #B6B9BC; */\n  padding: 6px 12px;\n  line-height: 22px;\n  border-radius: 4px;\n  vertical-align: middle;\n  font-size: 0.80em;\n  letter-spacing: 0.0625em;\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  cursor: default;\n}\n\nic-button.primary {\n  border-color: #39A2DE;\n/*   box-shadow: 0 0 0 1px #39A2DE; */\n  background-color: #1AA5E8;\n  background-image: linear-gradient(to bottom, #20B7F8 0%, #1B98DC 100%);\n  color: white;\n}\n</style>");
   
 });
 
@@ -291,7 +291,7 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-x\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n     width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\" enable-background=\"new 0 0 16 16\" xml:space=\"preserve\">\n<style>\n.ic-icon-x {\n  -moz-transform: rotate(0deg);\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  -moz-transition: transform 0.8s;\n  -ms-transition: transform 0.8s;\n  transition: transform 0.8s;\n}\n.ic-icon-x:hover {\n  transition-property: scale;\n  transition-duration: 0.8s;\n  transition: transform 0.8s;\n  -webkit-transition: transform 0.8s;\n  -moz-transition: transform 0.8s;\n  -webkit-transform: scale(1.05);\n  -moz-transform: scale(1.05);\n  -ms-transform: scale(1.05);\n  transform: scale(1.05);\n}\n.ic-icon-x:active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  transition-duration: 0.1s;\n  -moz-transition: transform 0.1s;\n  -ms-transition: transform 0.1s;\n  transition: transform 0.1s;\n}\n</style>\n  <g>\n      <path ");
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-x\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n     width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\" enable-background=\"new 0 0 16 16\" xml:space=\"preserve\">\n<style>\n.ic-icon-x {\n  -moz-transform: rotate(0deg);\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  -moz-transition: transform 0.8s;\n  -ms-transition: transform 0.8s;\n  transition: transform 0.8s;\n}\n.ic-icon-x:hover {\n  transition-property: scale;\n  transition-duration: 0.8s;\n  transition: transform 0.8s;\n  -webkit-transition: transform 0.8s;\n  -moz-transition: transform 0.8s;\n  -webkit-transform: scale(1.10);\n  -moz-transform: scale(1.10);\n  -ms-transform: scale(1.10);\n  transform: scale(1.10);\n}\n.ic-icon-x:active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  transition-duration: 0.1s;\n  -moz-transition: transform 0.1s;\n  -ms-transition: transform 0.1s;\n  transition: transform 0.1s;\n}\n</style>\n  <g>\n      <path ");
   hashContexts = {'fill': depth0};
   hashTypes = {'fill': "ID"};
   options = {hash:{
@@ -303,26 +303,60 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
-Ember.TEMPLATES["ic-components/component"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+Ember.TEMPLATES["components/ic-modal-css"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
-  var buffer = '', stack1, hashTypes, hashContexts, options, escapeExpression=this.escapeExpression, helperMissing=helpers.helperMissing;
+  
 
 
-  hashTypes = {};
-  hashContexts = {};
-  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "page", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
-  data.buffer.push("\n");
-  hashTypes = {};
-  hashContexts = {};
-  options = {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  data.buffer.push(escapeExpression(((stack1 = helpers.render || depth0.render),stack1 ? stack1.call(depth0, "page", options) : helperMissing.call(depth0, "render", "page", options))));
-  data.buffer.push("\n");
-  hashTypes = {};
-  hashContexts = {};
-  options = {hash:{},contexts:[depth0],types:["STRING"],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
-  data.buffer.push(escapeExpression(((stack1 = helpers.render || depth0.render),stack1 ? stack1.call(depth0, "pages/ic-canvas-logo", options) : helperMissing.call(depth0, "render", "pages/ic-canvas-logo", options))));
+  data.buffer.push("<style>\nic-modal .modal-body.columned {\n  display: -webkit-flex;\n  display: flex;\n}\n\nic-modal stacked-tabs {\n  overflow: hidden;\n  display: -webkit-flex;\n  display: flex;\n  -webkit-flex-direction: column;\n  flex-direction: column;\n}\n\nic-modal .modal-body > .padded {\n  -webkit-flex: 2.5;\n  flex: 2.5;\n}\n\nic-modal tab {\n  flex: 1;\n  padding: 0px 20px;\n  background-color: white;\n  border-right: 1px solid #E3E4E4;\n  cursor: default;\n  display: flex;\n  align-items: center;\n  max-height: 80px;\n}\n\nic-modal tab.active{\n  background-color: #EEF2F4;\n  box-shadow: 0 0 0 1px #E3E4E4;\n  border-right: 1px solid transparent;\n}\n\nic-modal tab:hover:not(.active) {\n  background: rgba(250, 250, 250, 0.82);\n}\n\nic-modal .modal-container {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n  background-color: black;\n  background: rgba(0, 0, 0, 0.82);\n  display: -webkit-flex;\n  display: flex;\n}\n\n@media (max-width: 970px) {\n  ic-modal .modal {\n    position:fixed;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    display: flex;\n    flex-direction: column;\n  }\n\n  ic-modal .modal-body {flex: 1}\n}\n\n@media (min-width: 971px) {\n  ic-modal .modal {\n    border-radius: 5px;\n    margin: auto;\n    max-width: 750px;\n    max-height: 85%;\n    background-color: white;\n    -webkit-flex: .8;\n            flex: .8;\n  } \n\n  ic-modal .modal-header {\n    border-top-left-radius: 5px;\n    border-top-right-radius: 5px;\n  }\n\n  ic-modal .modal-header-close {\n    border-top-right-radius: 5px;\n  }\n\n  ic-modal .modal-footer {\n    border-bottom-left-radius: 5px;\n    border-bottom-right-radius: 5px;\n  }\n}\n\nic-modal .modal-body {\n  overflow: scroll;\n  background-color: #EEF2F4;\n}\n\nic-modal .modal-body.padded,\nic-modal .modal-body > .padded{\n  padding: 12px;\n}\n\nic-modal .modal-header {\n  background-color: white;\n  display: -webkit-flex;\n  display: flex;\n  width: 100%;\n  border-bottom: 1px solid #E3E4E4;\n}\n\nic-modal .modal-title {\n  -webkit-flex: 1;\n  flex: 1;\n  font-size: 1.4em;\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\", Helvetica, Arial, \"Lucida Grande\", sans-serif; \n  font-weight: 300;\n  line-height: 100%;\n  padding: 20px;\n}\n\nic-modal .modal-header-close {\n  transition: background-color 0.15s;\n  -webkit-transition: background-color 0.15s;\n  width: 56px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  opacity: .5;\n}\n\nic-modal .modal-header-close:hover {\n  opacity: 1;\n  background-color: #f1f1f1;\n}\n\nic-modal .modal-header-center {\n  text-align: center;\n  -webkit-flex: 1;\n          flex: 1;\n}\n\nic-modal .modal-header-right {\n  padding: 6px;\n  -webkit-flex: 1;\n          flex: 1;\n  text-align: right;\n}\n\nic-modal .modal-footer {\n  display: -webkit-flex;\n  display: flex;\n  background-color: white;\n  border-top: 1px solid #E3E4E4;\n}\n\nic-modal .modal-footer-left {\n  -webkit-flex: 1;\n          flex: 1;\n}\n\nic-modal .modal-footer-center {\n  text-align: center;\n  -webkit-flex: 1;\n          flex: 1;\n}\n\nic-modal .modal-footer-right {\n  -webkit-flex: 1;\n          flex: 1;\n  text-align: right;\n  padding: 14px 12px;\n}\n</style>");
+  
+});
+
+Ember.TEMPLATES["components/ic-modal"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, stack2, hashTypes, hashContexts, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression, self=this;
+
+function program1(depth0,data) {
+  
+  var buffer = '', stack1, hashContexts, hashTypes, options;
+  data.buffer.push("\n            ");
+  hashContexts = {'style': depth0};
+  hashTypes = {'style': "STRING"};
+  options = {hash:{
+    'style': ("height: 20px;")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-x'] || depth0['ic-icon-x']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-x", options))));
+  data.buffer.push("\n          ");
   return buffer;
+  }
+
+  hashTypes = {};
+  hashContexts = {};
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "ic-modal-css", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  data.buffer.push("\n\n<ic-modal>\n  <div class=\"modal-container\">\n    <div class=\"modal\">\n      <div class=\"modal-header\">\n        <div class=\"modal-title\">\n          [Add Item to <strong>Week 1</strong>]\n        </div>\n        <div class=\"modal-header-close\">\n          ");
+  hashContexts = {'action': depth0};
+  hashTypes = {'action': "STRING"};
+  options = {hash:{
+    'action': ("close")
+  },inverse:self.noop,fn:self.program(1, program1, data),contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  stack2 = ((stack1 = helpers['ic-trigger'] || depth0['ic-trigger']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-trigger", options));
+  if(stack2 || stack2 === 0) { data.buffer.push(stack2); }
+  data.buffer.push("\n        </div>\n      </div>\n      <div class=\"modal-body columned\">\n        <stacked-tabs>\n          <tab>Assignments</tab>\n          <tab class=\"active\">Pages</tab>\n          <tab>Quizzes</tab>\n          <tab>File</tab>\n          <tab>Discussion</tab>\n          <tab>Text Header</tab>\n          <tab>External URL</tab>\n          <tab>External Tool</tab>\n        </stacked-tabs>\n        <div class=\"padded\">\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra risus massa, at interdum arcu rutrum in. Donec ac pellentesque sapien, vel tempor purus. Aliquam neque purus, molestie non lacinia vitae, ullamcorper id nunc. Maecenas dictum est et ipsum porttitor pellentesque. Sed ipsum arcu, bibendum eget placerat sit amet, dictum nec lorem. Proin turpis arcu, posuere id orci suscipit, blandit iaculis nisi. Quisque pretium porta sodales. Nullam luctus sed enim non dictum. Vivamus est ligula, mattis et commodo non, placerat id quam. Donec convallis, libero eu pellentesque consectetur, augue tortor vestibulum arcu, eu convallis massa lacus vel neque. In euismod turpis orci, nec sagittis neque sagittis eget.\n\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra risus massa, at interdum arcu rutrum in. Donec ac pellentesque sapien, vel tempor purus. Aliquam neque purus, molestie non lacinia vitae, ullamcorper id nunc. Maecenas dictum est et ipsum porttitor pellentesque. Sed ipsum arcu, bibendum eget placerat sit amet, dictum nec lorem. Proin turpis arcu, posuere id orci suscipit, blandit iaculis nisi. Quisque pretium porta sodales. Nullam luctus sed enim non dictum. Vivamus est ligula, mattis et commodo non, placerat id quam. Donec convallis, libero eu pellentesque consectetur, augue tortor vestibulum arcu, eu convallis massa lacus vel neque. In euismod turpis orci, nec sagittis neque sagittis eget.\n        </div>\n      </div>\n      <div class=\"modal-footer\">\n        <div class=\"modal-footer-right\">\n          <ic-button>Cancel</ic-button>\n          <ic-button class=\"primary\">Add Item</ic-button>\n        </div>\n      </div>\n    </div>\n  </div>\n</ic-modal>");
+  return buffer;
+  
+});
+
+Ember.TEMPLATES["components/ic-trigger"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var hashTypes, hashContexts, escapeExpression=this.escapeExpression;
+
+
+  hashTypes = {};
+  hashContexts = {};
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "yield", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
   
 });
 
@@ -413,9 +447,42 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
 Ember.TEMPLATES["ic-components/ic-modal"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
-  var buffer = '';
+  var buffer = '', stack1, hashTypes, hashContexts, options, escapeExpression=this.escapeExpression, self=this, helperMissing=helpers.helperMissing;
 
+function program1(depth0,data) {
+  
+  var buffer = '', hashTypes, hashContexts;
+  data.buffer.push(" fill-color=\"");
+  hashTypes = {};
+  hashContexts = {};
+  data.buffer.push(escapeExpression(helpers._triageMustache.call(depth0, "fillColor", {hash:{},contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data})));
+  data.buffer.push("\"");
+  return buffer;
+  }
 
+  data.buffer.push("<h1>&#123;&#123;ic-modal");
+  hashTypes = {};
+  hashContexts = {};
+  stack1 = helpers['if'].call(depth0, "fillColor", {hash:{},inverse:self.noop,fn:self.program(1, program1, data),contexts:[depth0],types:["ID"],hashContexts:hashContexts,hashTypes:hashTypes,data:data});
+  if(stack1 || stack1 === 0) { data.buffer.push(stack1); }
+  data.buffer.push("&#125;&#125;</h1>\n\n<attributes class=\"flex flex-column\">\n  <attribute class=\"flex flex-row\">\n    <label>fill-color:</label>\n    ");
+  hashContexts = {'value': depth0,'list': depth0,'class': depth0,'autofocus': depth0};
+  hashTypes = {'value': "ID",'list': "STRING",'class': "STRING",'autofocus': "STRING"};
+  options = {hash:{
+    'value': ("fillColor"),
+    'list': ("colors"),
+    'class': ("flex-1"),
+    'autofocus': ("autofocus")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
+  data.buffer.push("\n    <datalist id=\"colors\">\n      <option value=\"#D64027\">\n      <option value=\"#A3AAAD\">\n      <option value=\"white\">\n    </datalist>\n  </attribute>\n</attributes>\n\n");
+  hashContexts = {'style': depth0};
+  hashTypes = {'style': "STRING"};
+  options = {hash:{
+    'style': ("margin-top: 24px;width: 600px;height: 600px;")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-modal'] || depth0['ic-modal']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-modal", options))));
+  data.buffer.push("\n");
   return buffer;
   
 });
