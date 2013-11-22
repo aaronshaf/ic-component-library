@@ -286,6 +286,60 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
+Ember.TEMPLATES["components/ic-icon-discussion"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-discussion\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n	 width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\r\n	<path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" d=\"M86.946,4.333H13.322c-7.204,0-13.333,6.139-13.333,13.333v46.667c0,7.194,6.129,13.333,13.333,13.333\r\n	h6.667v20l26.667-20h40c7.204,0,13.333-6.139,13.333-13.333V17.667C99.989,10.473,94.149,4.333,86.946,4.333z\"/>\r\n</svg>\r\n");
+  return buffer;
+  
+});
+
+Ember.TEMPLATES["components/ic-icon-page"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-page\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n	 width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\r\n<path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" d=\"M25.537,64.221v3.339l49.951-0.049l-0.006-3.333L25.537,64.221z M75.532,42.031v-3.332l-50.008-0.02\r\n	l0.006,3.333L75.532,42.031z M50.501,29.562v-3.332l-24.976-0.051l0.006,3.333L50.501,29.562z M69.25,0H18.859\r\n	C15.405,0,13,2.796,13,6.25v87.5c0,3.454,2.796,6.25,6.25,6.25h62.109C84.814,100,88,97.204,88,93.75v-75L69.25,0z M81.75,87.5\r\n	c0,4.702-1.25,6.25-5.506,6.25H25.5c-4.833,0-6.25-1.75-6.25-6.25l-0.391-75.891c0-3.442,0.974-5.359,5.115-5.359h38.635v12.5\r\n	c0,6.543,6.25,6.25,6.25,6.25l12.891,0V87.5z M25.439,51.392v3.338l50.11-0.017l-0.006-3.333L25.439,51.392z M25.537,76.721v3.339\r\n	l49.951-0.049l-0.006-3.333L25.537,76.721z\"/>\r\n</svg>\r\n");
+  return buffer;
+  
+});
+
+Ember.TEMPLATES["components/ic-icon-publish"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-pubish\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n	 width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\r\n<path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M100,62c0,15.534-12.586,28.125-28.137,28.125\r\n	c-1.068,0-53.113,0-53.113,0C8.166,88.599,0,79.261,0,68.25c0-8.801,5.224-16.339,12.72-19.806c-0.086-0.714-0.22-1.416-0.22-2.149\r\n	c0-10.351,8.386-18.75,18.744-18.75c2.392,0,4.657,0.488,6.763,1.306C40.332,17.456,50.403,8.875,62.494,8.875\r\n	c13.824,0,25.006,11.194,25.006,25c0,1.544-0.183,3.039-0.452,4.504C94.824,43.384,100,52.069,100,62z M73.114,32.239\r\n	c-2.753-2.033-6.683-1.477-8.746,1.245l-19,24.982L34.955,48.249c-2.442-2.399-6.397-2.399-8.838,0\r\n	c-2.441,2.393-2.441,6.274,0,8.673l20.63,20.246l27.643-36.347C76.452,38.105,75.885,34.259,73.114,32.239z\"/>\r\n</svg>\r\n");
+  return buffer;
+  
+});
+
 Ember.TEMPLATES["components/ic-icon-quiz"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
@@ -322,13 +376,31 @@ helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   
 });
 
+Ember.TEMPLATES["components/ic-icon-unpublish"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
+this.compilerInfo = [4,'>= 1.0.0'];
+helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
+  var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+
+
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-unpublish\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n	 width=\"100%\" height=\"100%\" viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">\r\n<path ");
+  hashContexts = {'fill': depth0};
+  hashTypes = {'fill': "ID"};
+  options = {hash:{
+    'fill': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['bind-attr'] || depth0['bind-attr']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "bind-attr", options))));
+  data.buffer.push(" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M87.048,39.379c0.262-1.465,0.452-2.96,0.452-4.504\r\n	c0-13.806-11.182-25-25.006-25c-12.091,0-22.162,8.581-24.487,19.977c-2.106-0.818-4.371-1.306-6.763-1.306\r\n	c-10.358,0-18.744,8.399-18.744,18.75c0,0.733,0.134,1.434,0.22,2.149C5.224,52.911,0,60.449,0,69.25\r\n	c0,11.011,8.106,21.875,18.75,21.875c0,0,52.044,0,53.113,0C87.414,91.125,100,78.534,100,63\r\n	C100,53.069,94.824,44.384,87.048,39.379z M69.928,69.109c2.441,2.442,2.441,6.397,0,8.838c-1.221,1.221-2.82,1.831-4.419,1.831\r\n	c-1.599,0-3.198-0.611-4.419-1.831l-9.033-9.033l-9.033,9.033c-1.221,1.221-2.82,1.831-4.419,1.831\r\n	c-1.599,0-3.199-0.611-4.419-1.831c-2.441-2.441-2.441-6.396,0-8.838l9.033-9.033l-9.033-9.033c-2.441-2.441-2.441-6.396,0-8.838\r\n	c2.442-2.442,6.397-2.442,8.838,0l9.033,9.033l9.033-9.033c2.441-2.442,6.397-2.442,8.838,0c2.441,2.441,2.441,6.396,0,8.838\r\n	l-9.033,9.033L69.928,69.109z\"/>\r\n</svg>\r\n");
+  return buffer;
+  
+});
+
 Ember.TEMPLATES["components/ic-icon-x"] = Ember.Handlebars.template(function anonymous(Handlebars,depth0,helpers,partials,data) {
 this.compilerInfo = [4,'>= 1.0.0'];
 helpers = this.merge(helpers, Ember.Handlebars.helpers); data = data || {};
   var buffer = '', stack1, hashContexts, hashTypes, options, helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
 
 
-  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-x\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n     width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\" enable-background=\"new 0 0 16 16\" xml:space=\"preserve\">\n<style>\n.ic-icon-x {\n  -moz-transform: rotate(0deg);\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  -moz-transition: transform 0.8s;\n  -ms-transition: transform 0.8s;\n  transition: transform 0.8s;\n}\n.ic-icon-x:hover {\n  transition-property: scale;\n  transition-duration: 0.8s;\n  transition: transform 0.8s;\n  -webkit-transition: transform 0.8s;\n  -moz-transition: transform 0.8s;\n  -webkit-transform: scale(1.10);\n  -moz-transform: scale(1.10);\n  -ms-transform: scale(1.10);\n  transform: scale(1.10);\n}\n.ic-icon-x:active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  transition-duration: 0.1s;\n  -moz-transition: transform 0.1s;\n  -ms-transition: transform 0.1s;\n  transition: transform 0.1s;\n}\n</style>\n  <g>\n      <path ");
+  data.buffer.push("<svg version=\"1.1\" class=\"ic-icon-x\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\n     width=\"100%\" height=\"100%\" viewBox=\"0 0 16 16\" enable-background=\"new 0 0 16 16\" xml:space=\"preserve\">\n<style>\n.ic-icon-x {\n  -moz-transform: rotate(0deg);\n  transition-property: rotate;\n  transition-duration: 0.8s;\n  -moz-transition: transform 0.8s;\n  -ms-transition: transform 0.8s;\n  transition: transform 0.8s;\n}\n.ic-icon-x:hover {\n  transition-property: scale;\n  transition-duration: 0.8s;\n  transition: transform 0.8s;\n  -webkit-transition: transform 0.8s;\n  -moz-transition: transform 0.8s;\n  -webkit-transform: scale(1.09);\n  -moz-transform: scale(1.09);\n  -ms-transform: scale(1.09);\n  transform: scale(1.09);\n}\n.ic-icon-x:active {\n  -webkit-transform: scale(0.9);\n  -moz-transform: scale(0.9);\n  -ms-transform: scale(0.9);\n  transform: scale(0.9);\n  transition-duration: 0.1s;\n  -moz-transition: transform 0.1s;\n  -ms-transition: transform 0.1s;\n  transition: transform 0.1s;\n}\n</style>\n  <g>\n      <path ");
   hashContexts = {'fill': depth0};
   hashTypes = {'fill': "ID"};
   options = {hash:{
@@ -362,7 +434,7 @@ function program1(depth0,data) {
   hashContexts = {'style': depth0};
   hashTypes = {'style': "STRING"};
   options = {hash:{
-    'style': ("height: 20px;display: block;")
+    'style': ("width: 20px;height: 20px;display: block;")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-x'] || depth0['ic-icon-x']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-x", options))));
   data.buffer.push("\n          ");
@@ -478,28 +550,56 @@ function program1(depth0,data) {
     'fill-color': ("fillColor")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-x'] || depth0['ic-icon-x']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-x", options))));
-  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-x</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">x</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
   hashContexts = {'fill-color': depth0};
   hashTypes = {'fill-color': "ID"};
   options = {hash:{
     'fill-color': ("fillColor")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-settings'] || depth0['ic-icon-settings']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-settings", options))));
-  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-settings</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">settings</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
   hashContexts = {'fill-color': depth0};
   hashTypes = {'fill-color': "ID"};
   options = {hash:{
     'fill-color': ("fillColor")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-assignment'] || depth0['ic-icon-assignment']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-assignment", options))));
-  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-assignment</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">assignment</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
   hashContexts = {'fill-color': depth0};
   hashTypes = {'fill-color': "ID"};
   options = {hash:{
     'fill-color': ("fillColor")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-quiz'] || depth0['ic-icon-quiz']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-quiz", options))));
-  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">ic-icon-quiz</icon-example-tag>\n  </icon-example>\n</icon-examples>\n\n<style>\nicon-example .ic-icon {\n  width: 20px;\n  height: 20px;\n}\n\nicon-examples {\n  margin-top: 12px;\n}\n\nicon-example {\n  margin: 0px 8px 4px 0;\n  min-width: 220px;\n  box-shadow: 1px 1px 3px #ddd;\n  padding: 6px;\n  transition: box-shadow 0.15s;\n  -webkit-transition: box-shadow 0.15s;\n}\n\nicon-example:hover {\nbox-shadow: 1px 1px 3px #bbb;\n}\n\nicon-example-tag {\n  white-space: nowrap;\n  font-size: 1.1em;\n  margin-left: 6px;\n}\n</style>");
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">quiz</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-page'] || depth0['ic-icon-page']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-page", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">page</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-discussion'] || depth0['ic-icon-discussion']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-discussion", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">discussion</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-publish'] || depth0['ic-icon-publish']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-publish", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">publish</icon-example-tag>\n  </icon-example>\n\n  <icon-example class=\"flex flex-1 flex-row align-items-center\">\n    ");
+  hashContexts = {'fill-color': depth0};
+  hashTypes = {'fill-color': "ID"};
+  options = {hash:{
+    'fill-color': ("fillColor")
+  },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
+  data.buffer.push(escapeExpression(((stack1 = helpers['ic-icon-unpublish'] || depth0['ic-icon-unpublish']),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "ic-icon-unpublish", options))));
+  data.buffer.push("\n    <icon-example-tag class=\"flex-1\">unpublish</icon-example-tag>\n  </icon-example>\n</icon-examples>\n\n<style>\nicon-example .ic-icon {\n  width: 20px;\n  height: 20px;\n}\n\nicon-examples {\n  margin-top: 12px;\n}\n\nicon-example {\n  margin: 0px 8px 8px 0;\n  min-width: 175px;\n  box-shadow: 1px 1px 3px #ddd;\n  padding: 6px;\n  transition: box-shadow 0.15s;\n  -webkit-transition: box-shadow 0.15s;\n}\n\nicon-example:hover {\nbox-shadow: 1px 1px 3px #bbb;\n}\n\nicon-example-tag {\n  white-space: nowrap;\n  font-size: 1.1em;\n  margin-left: 6px;\n}\n</style>");
   return buffer;
   
 });

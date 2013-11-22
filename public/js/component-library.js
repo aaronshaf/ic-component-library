@@ -81,8 +81,44 @@ define("component-library",
       }.property('fill-color')
     });
 
+    App.IcIconDiscussionComponent = Ember.Component.extend({
+      tagName: 'ic-icon-discussion',
+      classNames: 'ic-icon',
+      attributeBindings: 'style',
+      'fillColor': function() {
+        return this.get('fill-color') ? this.get('fill-color') : 'black';
+      }.property('fill-color')
+    });
+
+    App.IcIconPageComponent = Ember.Component.extend({
+      tagName: 'ic-icon-page',
+      classNames: 'ic-icon',
+      attributeBindings: 'style',
+      'fillColor': function() {
+        return this.get('fill-color') ? this.get('fill-color') : 'black';
+      }.property('fill-color')
+    });
+
     App.IcIconSettingsComponent = Ember.Component.extend({
       tagName: 'ic-icon-settings',
+      classNames: 'ic-icon',
+      attributeBindings: 'style',
+      'fillColor': function() {
+        return this.get('fill-color') ? this.get('fill-color') : '#010101';
+      }.property('fill-color')
+    });
+
+    App.IcIconPublishComponent = Ember.Component.extend({
+      tagName: 'ic-icon-publish',
+      classNames: 'ic-icon',
+      attributeBindings: 'style',
+      'fillColor': function() {
+        return this.get('fill-color') ? this.get('fill-color') : '#010101';
+      }.property('fill-color')
+    });
+
+    App.IcIconUnpublishComponent = Ember.Component.extend({
+      tagName: 'ic-icon-unpublish',
       classNames: 'ic-icon',
       attributeBindings: 'style',
       'fillColor': function() {
